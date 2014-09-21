@@ -1,0 +1,24 @@
+{
+  "name": "TFSSlackRelay",
+  "version": "0.1.1",
+  "description": "Connects TFS to Slack for sending TFS updates",
+  "keywords": [
+    "TFS",
+    "Slack",
+    "integration",
+    "integrations"
+  ],
+  "author": "Rick Duggan <rick.duggan@gmail.com>",
+  "main": "relay.js",
+  "scripts": { "start": "forever start relay.js", "stop": "forever stop relay.js" },
+  "dependencies": {
+    "restify": ">=2.8.2",
+    "requestify": ">=0.1.16",
+    "forever": ">=0.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rickduggan/TFSSlackRelay.git"
+  },
+  "license": "MIT" 
+}
