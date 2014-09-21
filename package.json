@@ -1,6 +1,6 @@
 {
   "name": "tfs-slack-relay",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Connects TFS to Slack for sending TFS updates",
   "keywords": [
     "TFS",
