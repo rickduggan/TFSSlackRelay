@@ -8,4 +8,5 @@ Requires configuration of { slackHost }, { token }, { channel }, and { server } 
 TODO
 
 Switch to https
+
 Move variables into config file
