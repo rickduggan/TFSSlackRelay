@@ -37,7 +37,13 @@ function relay(msg) {
 function processIncoming(req, res, next) {
   relay(req.params);
   // send back something to the client
-  res.send('{"ok" : "true" }');
+  res.send('{ "ok" : "true" }');
+}
+
+// this handles the incoming route /health-check
+function processHealthCheck(req, res, next) {
+  // send back something to the client
+  res.send('{ "ok" : "true" }');
 }
 
 // set up the server
@@ -48,6 +54,7 @@ function main() {
   server.use(restify.bodyParser());
   // set up the route
   server.post('/incoming-webhook', processIncoming);
+  server.get('/health-check', processHealthCheck);
 
   server.listen(port, function() {
   });
